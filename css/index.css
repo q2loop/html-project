@@ -38,6 +38,8 @@ main section {
     min-height: 500px;
 }
 
+
+
 #welcome-bg {
     width: 100%;
     background: url("../img/welcome-bg.jpg") no-repeat 50% 0px;
@@ -45,7 +47,7 @@ main section {
     min-height: 600px;
 }
 
-#about-section {
+#about-section .container {
     
     float: left;
     
@@ -53,5 +55,5 @@ main section {
 
 #about-what-img {
     background: url("../img/pollution.jpg") no-repeat 50% 0px;
-    float: right;
+    float: left;
 }
