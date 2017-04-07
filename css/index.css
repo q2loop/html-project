@@ -36,6 +36,7 @@ main section {
     box-sizing: border-box;
     width: 50%;
     min-height: 500px;
+    float: left;
 }
 
 
@@ -56,4 +57,10 @@ main section {
 #about-what-img {
     background: url("../img/pollution.jpg") no-repeat 50% 0px;
     float: left;
+}
+
+#recycle-map iframe{
+    width: 100%;
+    min-height: 300px;
+    border: 0;
 }
