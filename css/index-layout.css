@@ -1,0 +1,31 @@
+@media screen and (min-width: 769px) {
+    .how-element {
+        width: 33%;
+    }    
+}
+
+@media screen and (max-width: 768px) and (min-width: 421px) {
+    /*#about-section, #lifehacks article {*/
+    /*    display: flex;*/
+    /*}*/
+    .container {
+        float: none !important;
+        width: 100% !important;
+    }
+    #lifehacks article {
+        display: flex;
+        flex-flow: row-reverse;
+    }
+    #how-section div {
+        display: flex;
+        flex-flow: column;
+    }
+    .how-element {
+        width: 100%;
+    }
+    
+}
+
+@media screen and (max-width: 420px) {
+    
+}

@@ -6,12 +6,13 @@
 
 a {
     text-decoration: none;
-    color: #ff05850e;
+    color: #05850e;
 }
 
 /*body {
     margin-top: 50px;
 } */
+
 
 /* ---header--- */
 header {
@@ -20,14 +21,25 @@ header {
     width: 100%;
     box-sizing: border-box;
     height: 50px;
+    padding: 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 1px 2px grey;
 }
 
-.head-nav {
-    float: right;
+.head-nav a {
+    margin-left: 10px;
 }
 
 
 /* ---main--- */
+main {
+    /*max-width: 1000px;*/
+    /*margin: 0 auto;*/
+}
+
 main section {
     box-sizing: border-box;
 }
@@ -37,15 +49,36 @@ main section {
     width: 50%;
     min-height: 500px;
     float: left;
+    padding: 50px;
 }
 
+/* to all 'headers' of sections and footer*/
+section > h2, footer p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100px;
+    background-color: #a2ed84;
+    color: #05850e;
+}
 
+.container h2 {
+    text-align: center;
+}
+
+/*div p {*/
+/*    padding: 10px 10px;*/
+/*}*/
 
 #welcome-bg {
     width: 100%;
-    background: url("../img/welcome-bg.jpg") no-repeat 50% 0px;
+    /* need to fix the background so it will always be in center */
+    background: url("../img/welcome-bg.jpg") no-repeat 50% 50%; 
     background-size: cover;
     min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #welcome-bg h1 {
@@ -55,19 +88,78 @@ main section {
     color: white;
 }
 
+.divide-line {
+    min-height: 15px;
+    background-color: #a2ed84;
+}
+
+/*decicing to use either float, or flexbox*/
+#about-section, #how-section, #lifehacks {
+    clear: both;
+}
+
 #about-section .container {
-    
     float: left;
-    
 }
 
 #about-what-img {
+    /*fix the percentage of  the img 'cause it change its vertical align*/
     background: url("../img/pollution.jpg") no-repeat 50% 0px;
     float: left;
 }
 
+
+/*---How section---*/
+#how-section > div {
+    padding: 50px;
+}
+
+.how-element {
+    /*width: 33%;*/
+    float: left;
+    /*can use either 'float' or 'inline-block'*/
+    /*display: inline-block; */
+    box-sizing: border-box;
+    min-height: 150px;
+    margin-top: 50px;
+}
+
+div .fa {
+    font-size: 36px;
+    float: left;
+}
+
+.how-article {
+    margin-left: 50px;
+}
+
+
+/*---lifehacks section---*/
+#trash-sort-photo {
+    background: url("../img/trash-separation.jpg") no-repeat 50% 0px;
+}
+
+#recycle-map {
+    padding: 0;
+}
+
 #recycle-map iframe{
     width: 100%;
-    min-height: 300px;
+    min-height: 500px;
     border: 0;
+    padding: 0;
 }
+
+
+/*---feedback section---*/
+#feedback {
+    clear: both;
+}
+
+#feedback div {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+/*---footer---*/
