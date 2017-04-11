@@ -44,10 +44,13 @@ main section {
     box-sizing: border-box;
 }
 
+.wrapper {
+    max-width: 100px;
+    margin: 0 auto;
+}
+
 .container {
     box-sizing: border-box;
-    width: 50%;
-    min-height: 500px;
     float: left;
     padding: 50px;
 }
@@ -75,7 +78,8 @@ section > h2, footer p {
     /* need to fix the background so it will always be in center */
     background: url("../img/welcome-bg.jpg") no-repeat 50% 50%; 
     background-size: cover;
-    min-height: 600px;
+    /*min-height: 600px;*/
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;

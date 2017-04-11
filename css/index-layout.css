@@ -2,6 +2,10 @@
     .how-element {
         width: 33%;
     }    
+    .container {
+        width: 50%;
+        min-height: 500px;
+    }
 }
 
 @media screen and (max-width: 768px) and (min-width: 421px) {
@@ -11,12 +15,13 @@
     .container {
         float: none !important;
         width: 100% !important;
+        min-height: 200px;
     }
     #lifehacks article {
         display: flex;
-        flex-flow: row-reverse;
+        flex-flow: column-reverse;
     }
-    #how-section div {
+    #how-section > div {
         display: flex;
         flex-flow: column;
     }
