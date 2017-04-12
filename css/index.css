@@ -68,13 +68,6 @@ section > h2, footer p {
     color: #05850e;
 }
 
-/*.container h2 {*/
-/*    text-align: center;*/
-/*}*/
-
-/*div p {*/
-/*    padding: 10px 10px;*/
-/*}*/
 
 /*---Welcome-bg section---*/
 #welcome-bg {
@@ -105,19 +98,15 @@ section > h2, footer p {
 }
 
 /*---About section---*/
-/*decicing to use either float, or flexbox*/
+/*deciding to use either float, or flexbox*/
 #about-section, #how-section, #lifehacks {
     clear: both;
 }
 
-/*#about-section .container {*/
-/*    float: left;*/
-/*}*/
 
 #about-what-img {
     /*fix the percentage of  the img 'cause it changes its vertical align*/
     background: url("../img/pollution.jpg") no-repeat 50% 50%;
-    /*float: left;*/
 }
 
 
