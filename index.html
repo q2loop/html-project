@@ -6,9 +6,11 @@
     <link rel="stylesheet" href="css/index-layout.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <!--use this to apply responsive layout to smaller devices-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-    <!--header section-->
+    <!--HEADER-->
     <header>
         <div class="logo">
             <a href="#">Життя в стилі ЕКО</a>
@@ -20,10 +22,10 @@
             <a href="#feedback">Контакти</a>
         </nav>
     </header>
-    <!--main section-->
+    <!--MAIN-->
     <main>
         <section id="welcome-bg">
-            <h1>Життя в стилі ЕКО</h1>
+            <h1>Життя в стилі <strong> ЕКО</strong></h1>
         </section>
         <div class="divide-line"></div>
         <section id="about-section" class="wrapper">
@@ -47,8 +49,9 @@
                     <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                     <article class="how-article">
                         <h3>Покупки</h3>
-                        <p>Роблячи покупки, відмовляйтесь від поліетиленових пакетів, 
-                        пластикової однаразової тари, продуктів в фользі, тощо.
+                        <p>Роблячи покупки, відмовляйтесь від поліетиленових 
+                        пакетів, пластикової однаразової тари, продуктів в 
+                        фользі, тощо.
                         </p>
                     </article>
                 </div>
@@ -57,7 +60,8 @@
                     <article class="how-article">
                         <h3>Роздільне сміття</h3>
                         <p>
-                            Розділяйте прозорий пластик, скляну тару, папір, компост.
+                            Розділяйте прозорий пластик, скляну тару, папір, 
+                            компост. 
                             Утилізовуйте відходи у відповідних контейнерах.
                         </p>
                     </article>
@@ -90,11 +94,13 @@
                     <article class="how-article">
                         <h3>Енергоощадливість</h3>
                         <p>
-                            Використовуйте енергоощадливі лампочки. Вимикайте наніч 
+                            Використовуйте енергоощадливі лампочки. Вимикайте 
+                            наніч 
                             пристрої для економії. 
                             <br>
-                            На даний момент велика частка електроенергії в Україні 
-                            виробляється на ТЕС і ГЕС, які шкодять довкіллю. 
+                            На даний момент велика частка електроенергії в 
+                            Україні виробляється на ТЕС і ГЕС, які шкодять 
+                            довкіллю. 
                         </p>    
                     </article>
                 </div>
@@ -118,8 +124,9 @@
             <article class="wrapper">
                 <div class="container">
                     <h2>Карта</h2>
-                    <p>На даній карті відображені точки, куди можна здати сміття
-                        на переробку. <br>
+                    <p>На даній карті відображені точки, куди можна здати 
+                    різноманітне сміття на переробку в вашому місті. <br>
+                    На ній присутнє меню з фільтрами по категоріях. <br>
                         Доповнити інформацію може будь-хто бажаючий.
                     </p>
                 </div>
@@ -132,21 +139,24 @@
             <h2>Зворотній зв’язок</h2>
             <div class="wrapper">
                 <form method="POST" action="https://formspree.io/q2loop@gmail.com">
-                    <input type="text" name="client-name" placeholder="Ім’я" 
+                    <fieldset>
+                        <input type="text" name="client-name" placeholder="Ім’я" 
                         required/>
-                    <br>
-                    <input type="email" name="user-email" id="user-email" 
-                        placeholder="Емейл" required/>
-                    <br>
-                    <textarea name="feedback" placeholder="Повідомлення" 
-                    cols="16" rows="4"> </textarea>
-                    <br>
-                    <input type="submit" value="Відправити">
+                        <br>
+                        <input type="email" name="user-email" id="user-email" 
+                            placeholder="Емейл" required/>
+                        <br>
+                        <textarea name="feedback" placeholder="Повідомлення" 
+                        cols="16" rows="4"> </textarea>
+                        <br>
+                        <input type="submit" value="Відправити">
+                    </fieldset>
+                    
                 </form>
             </div>
         </section>
     </main>
-    <!--footer section-->
+    <!--FOOTER-->
     <footer>
         <p lang="en">&copy; 2017 | xecyc</p>
     </footer>

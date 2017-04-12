@@ -4,14 +4,19 @@
     padding: 0;
 }
 
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 a {
     text-decoration: none;
     color: #05850e;
 }
 
-/*body {
-    margin-top: 50px;
-} */
+.head-nav a:hover {
+    color: #000;
+    transition: 0.5s ease-in-out;
+}
 
 
 /* ---header--- */
@@ -34,7 +39,7 @@ header {
 }
 
 
-/* ---main--- */
+/* ---MAIN--- */
 main {
     /*max-width: 1000px;*/
     /*margin: 0 auto;*/
@@ -51,7 +56,6 @@ main section {
 
 .container {
     box-sizing: border-box;
-    float: left;
     padding: 50px;
 }
 
@@ -60,25 +64,24 @@ section > h2, footer p {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100px;
     background-color: #a2ed84;
     color: #05850e;
 }
 
-.container h2 {
-    text-align: center;
-}
+/*.container h2 {*/
+/*    text-align: center;*/
+/*}*/
 
 /*div p {*/
 /*    padding: 10px 10px;*/
 /*}*/
 
+/*---Welcome-bg section---*/
 #welcome-bg {
     width: 100%;
     /* need to fix the background so it will always be in center */
     background: url("../img/welcome-bg.jpg") no-repeat 50% 50%; 
     background-size: cover;
-    /*min-height: 600px;*/
     height: 100vh;
     display: flex;
     align-items: center;
@@ -92,24 +95,29 @@ section > h2, footer p {
     color: white;
 }
 
+#welcome-bg strong {
+    color: #a2ed84;
+}
+
 .divide-line {
     min-height: 15px;
     background-color: #a2ed84;
 }
 
+/*---About section---*/
 /*decicing to use either float, or flexbox*/
 #about-section, #how-section, #lifehacks {
     clear: both;
 }
 
-#about-section .container {
-    float: left;
-}
+/*#about-section .container {*/
+/*    float: left;*/
+/*}*/
 
 #about-what-img {
-    /*fix the percentage of  the img 'cause it change its vertical align*/
-    background: url("../img/pollution.jpg") no-repeat 50% 0px;
-    float: left;
+    /*fix the percentage of  the img 'cause it changes its vertical align*/
+    background: url("../img/pollution.jpg") no-repeat 50% 50%;
+    /*float: left;*/
 }
 
 
@@ -119,13 +127,7 @@ section > h2, footer p {
 }
 
 .how-element {
-    /*width: 33%;*/
-    float: left;
-    /*can use either 'float' or 'inline-block'*/
-    /*display: inline-block; */
     box-sizing: border-box;
-    min-height: 150px;
-    margin-top: 50px;
 }
 
 div .fa {
@@ -138,22 +140,18 @@ div .fa {
 }
 
 
-/*---lifehacks section---*/
+/*---Lifehacks section---*/
 #trash-sort-photo {
-    background: url("../img/trash-separation.jpg") no-repeat 50% 0px;
+    background: url("../img/trash-separation.jpg") no-repeat 50% 50%;
 }
 
 #recycle-map {
     padding: 0;
 }
-
-#recycle-map iframe{
-    width: 100%;
-    min-height: 500px;
+    #recycle-map iframe {
     border: 0;
     padding: 0;
 }
-
 
 /*---feedback section---*/
 #feedback {
@@ -166,4 +164,5 @@ div .fa {
     padding: 50px;
 }
 
-/*---footer---*/
+
+/*---FOOTER---*/
