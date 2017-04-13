@@ -37,10 +37,9 @@ html {
     .how-element {
         width: 33%;
         float: left;
-        /*can use either 'float' or 'inline-block'*/
-        /*display: inline-block; */
         min-height: 150px;
-        margin-top: 50px;
+        margin: 50px 0;
+        padding: 0 20px;
     } 
     #recycle-map iframe {
     width: 100%;
@@ -75,7 +74,7 @@ html {
     .container {
         width: 100%;
         height: 300px;
-        float: none !important;
+        float: none;
     }
     /*margin between <h2> and content in <p>*/
     .container h2 {
@@ -84,11 +83,12 @@ html {
     #how-section > div {
         display: flex;
         flex-flow: column;
+        padding: 50px;
     }
     .how-element {
         width: 100%;
-        min-height: 100px;
         margin-top: 20px;
+        padding-bottom: 10px;
     }
     .how-element:first-child {
         margin-top: 0;
@@ -130,7 +130,7 @@ html {
     .container {
         width: 100%;
         height: 300px;
-        float: none !important;
+        float: none;
     }
     /*margin between <h2> and content in <p>*/
     .container h2 {
@@ -139,11 +139,12 @@ html {
     #how-section > div {
         display: flex;
         flex-flow: column;
+        padding: 50px;
     }
     .how-element {
         width: 100%;
-        min-height: 100px;
         margin-top: 20px;
+        padding-bottom: 10px;
     }
     .how-element:first-child {
         margin-top: 0;

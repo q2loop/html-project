@@ -25,7 +25,7 @@
     <!--MAIN-->
     <main>
         <section id="welcome-bg">
-            <h1>Життя в стилі <strong> ЕКО</strong></h1>
+            <h1>Життя в стилі<strong>&thinsp;ЕКО</strong></h1>
         </section>
         <div class="divide-line"></div>
         <section id="about-section" class="wrapper">
@@ -116,7 +116,7 @@
                     наступна система розділення сміття:<br>
                     1. Органічні відходи <br>
                     2. Неорганічні, що переробляються <br>
-                      1) Папір 2) Скло 3) Прозорий пластик <br>
+                        (папір, пластик, скло, метал) <br>
                     3. Неорганічні, що не переробляються
                     </p>
                 </div>
@@ -139,19 +139,23 @@
             <h2>Зворотній зв’язок</h2>
             <div class="wrapper">
                 <form method="POST" action="https://formspree.io/q2loop@gmail.com">
-                    <fieldset>
-                        <input type="text" name="client-name" placeholder="Ім’я" 
-                        required/>
-                        <br>
-                        <input type="email" name="user-email" id="user-email" 
-                            placeholder="Емейл" required/>
-                        <br>
-                        <textarea name="feedback" placeholder="Повідомлення" 
-                        cols="16" rows="4"> </textarea>
-                        <br>
-                        <input type="submit" value="Відправити">
-                    </fieldset>
-                    
+                    <p>
+                        <input class="feed-input" type="text" name="client-name"
+                        placeholder="Ім’я*" required/>
+                    </p>
+                    <p>
+                        <input class="feed-input" type="email" name="user-email"
+                        id="user-email" placeholder="Емейл*" required/>    
+                    </p>
+                    <p>
+                        <textarea class="feed-input" name="feedback" 
+                        placeholder="Повідомлення*" 
+                        cols="20" rows="4" required></textarea>    
+                    </p>
+                    <p>
+                        <button class="feed-input" type="submit">Відправити
+                        </button> 
+                    </p>
                 </form>
             </div>
         </section>
@@ -162,5 +166,9 @@
     </footer>
     <!--font Awesome CDN script-->
     <script src="https://use.fontawesome.com/f37c54ad2a.js"></script>
+    <script   src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous">
+    </script>
 </body>
 </html>
