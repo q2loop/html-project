@@ -72,14 +72,12 @@ section > h2, footer p {
     background-size: cover;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 #welcome-bg h1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     color: white;
 }
 
@@ -87,10 +85,30 @@ section > h2, footer p {
     color: #a2ed84;
 }
 
+/* bouncing arrow - START*/
+.bouncing-arrow {
+     height: 40px;
+    font-size: 40px;
+    line-height: 40px;
+    -webkit-animation: bounce 2s infinite ease-in-out;
+}
+
+@-webkit-keyframes bounce {
+	0%, 20%, 60%, 100%  { -webkit-transform: translateY(0); }
+    40%  { -webkit-transform: translateY(-20px); }
+	80% { -webkit-transform: translateY(-10px); }
+}
+
+.bouncing-arrow a {
+    color: white;
+}
+/* bouncing arrow - END*/
+
 .divide-line {
     min-height: 15px;
     background-color: #a2ed84;
 }
+
 
 /*---About section---*/
 #about-section, #how-section, #lifehacks {
